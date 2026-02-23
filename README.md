@@ -1,5 +1,6 @@
 busybox-prebuilt
 ================
+<kbd>[**vscode-web-action**](https://github.com/dirkarnez/vscode-web-action/actions/workflows/vscode-web.yml)</kbd><br>
 ### TODOs
 - [ ] Build variants
   - `STATIC_LIBGCC`, `BUILD_LIBBUSYBOX`, `STATIC`, `CONFIG_BUILD_LIBBUSYBOX=y`, `CONFIG_FEATURE_SHARED_BUSYBOX=y`

@@ -12,14 +12,15 @@ jobs:
   build:
     strategy:
       matrix:
-        defconfig: [ mx6cubox_defconfig ]
+        os: [ ubuntu-24.04-arm ]
         
-    runs-on: ubuntu-latest
+ # defconfig: [ mx6cubox_defconfig ]
+        
+    runs-on: ${{ matrix.os }}
     env:
       libraryName: busybox
       tagName: 1_37_0
     steps:
-    
       - uses: actions/checkout@v4
 
       - run: |
@@ -130,11 +131,11 @@ jobs:
         with:
           type: 'zip'
           directory: "${{ env.libraryName }}/output/images"
-          filename: "${{ env.libraryName }}-${{ matrix.defconfig }}-${{ github.ref_name }}.zip"
+          filename: "${{ env.libraryName }}-${{ github.ref_name }}.zip"
         
       - name: Release prebuilt
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "${{ env.libraryName }}/output/images/${{ env.libraryName }}-${{ matrix.defconfig }}-${{ github.ref_name }}.zip"
+          artifacts: "${{ env.libraryName }}/output/images/${{ env.libraryName }}-${{ github.ref_name }}.zip"
           allowUpdates: true
           token: ${{ secrets.GITHUB_TOKEN }}

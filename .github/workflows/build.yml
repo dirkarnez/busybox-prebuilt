@@ -112,7 +112,9 @@ jobs:
       #       -DBUILD_SHARED_LIBS=OFF ^
       #       -DCMAKE_INSTALL_PREFIX="cmake-build/${{ env.cmakeInstallationPath }}" -B./cmake-build &&^
       #       cd cmake-build && cmake --build . --config Release && cmake --install . 
-      
+      - run: |
+          gcc --version
+          
       - run: |
           cd ${{ env.libraryName }} && \
           make defconfig && \

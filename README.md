@@ -12,7 +12,6 @@ busybox-prebuilt
 ### Tutorials
 - [Compiling and Running a Minimal Kernel with Busybox | by Chien Hao Tan | Medium](https://medium.com/@chienhaotan/compiling-and-running-a-minimal-kernel-with-busybox-bfc45a991017)
 - [BusyBox编译与根文件系统构建-CSDN博客](https://blog.csdn.net/ludaoyi88/article/details/136389796)
-
-### Related
+- [gokrazy/serial-busybox: A bundled statically compiled standalone busybox binary, for debugging on the serial port](https://github.com/gokrazy/serial-busybox)
 - [F0rth/go-busybox: Go bindings to busybox shared library libbusybox.so](https://github.com/F0rth/go-busybox)
 

@@ -4,6 +4,10 @@ busybox-prebuilt
 ### TODOs
 - [ ] Build variants
   - `STATIC_LIBGCC`, `BUILD_LIBBUSYBOX`, `STATIC`, `CONFIG_BUILD_LIBBUSYBOX=y`, `CONFIG_FEATURE_SHARED_BUSYBOX=y`
+  - `CONFIG_STATIC=y`, `# CONFIG_PIE is not set`, `CONFIG_STATIC_LIBGCC=y`
+
+
+
 
 ### Tutorials
 - [Compiling and Running a Minimal Kernel with Busybox | by Chien Hao Tan | Medium](https://medium.com/@chienhaotan/compiling-and-running-a-minimal-kernel-with-busybox-bfc45a991017)

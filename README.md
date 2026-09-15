@@ -15,3 +15,6 @@ busybox-prebuilt
 - [gokrazy/serial-busybox: A bundled statically compiled standalone busybox binary, for debugging on the serial port](https://github.com/gokrazy/serial-busybox)
 - [F0rth/go-busybox: Go bindings to busybox shared library libbusybox.so](https://github.com/F0rth/go-busybox)
 
+
+
+<!-- Security scan triggered at 2026-09-15 09:32:45 -->
